@@ -85,7 +85,7 @@ export function Contact() {
           </a>
         </Reveal>
 
-        <Reveal direction="right" className="card-industrial p-6 sm:p-8" id="contact-form">
+        <Reveal direction="right" className="card-industrial p-6 sm:p-8">
           <h3 className="font-display text-xl font-bold text-ink">Send Us Your Enquiry</h3>
           <p className="mt-2 text-sm text-muted-foreground">We will get back to you shortly.</p>
 
