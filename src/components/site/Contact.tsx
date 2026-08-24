@@ -86,6 +86,7 @@ export function Contact() {
         </Reveal>
 
         <Reveal direction="right" className="card-industrial p-6 sm:p-8">
+          <span id="contact-form" className="block scroll-mt-28" />
           <h3 className="font-display text-xl font-bold text-ink">Send Us Your Enquiry</h3>
           <p className="mt-2 text-sm text-muted-foreground">We will get back to you shortly.</p>
 
