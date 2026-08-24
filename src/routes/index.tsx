@@ -56,7 +56,7 @@ export const Route = createFileRoute("/")({
 
 function Index() {
   return (
-    <div className="min-h-screen scroll-smooth bg-background font-sans">
+    <div className="min-h-screen overflow-x-hidden scroll-smooth bg-background font-sans">
       <Header />
       <main>
         <Hero />
