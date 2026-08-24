@@ -319,7 +319,7 @@
   transform: scale(0.94);
 }
 
-@utility is-revealed {
+.reveal.is-revealed {
   opacity: 1;
   transform: none;
 }
