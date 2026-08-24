@@ -168,6 +168,9 @@
   body {
     font-family: var(--font-body);
   }
+  section[id] {
+    scroll-margin-top: 5.5rem;
+  }
   h1,
   h2,
   h3,
@@ -319,7 +322,7 @@
   transform: scale(0.94);
 }
 
-@utility is-revealed {
+.reveal.is-revealed {
   opacity: 1;
   transform: none;
 }

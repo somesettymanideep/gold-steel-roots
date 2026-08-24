@@ -26,7 +26,7 @@ import {
 } from "lucide-react";
 import { Reveal } from "@/components/Reveal";
 
-const industries = [
+export const industries = [
   { name: "Aerospace & Aviation", Icon: Plane },
   { name: "Automobile & Auto Ancillary", Icon: Car },
   { name: "Construction", Icon: HardHat },
