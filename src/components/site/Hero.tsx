@@ -1,36 +1,36 @@
 import { useCallback, useEffect, useRef, useState } from "react";
 import { ArrowRight, ChevronLeft, ChevronRight } from "lucide-react";
-import heroSafety from "@/assets/hero-safety.jpg";
-import heroSolutions from "@/assets/hero-solutions.jpg";
-import heroPartner from "@/assets/hero-partner.jpg";
+import heroPpeAsset from "@/assets/hero-ppe-fire.png.asset.json";
+import heroRoadAsset from "@/assets/hero-road-safety.png.asset.json";
+import heroWeldingAsset from "@/assets/hero-welding.png.asset.json";
 import { cn } from "@/lib/utils";
 
 const slides = [
   {
-    image: heroSafety,
-    alt: "Industrial engineers in safety helmets and high-visibility jackets inspecting heavy machinery",
-    eyebrow: "Industrial Safety",
-    title: "71+ Years of Trust in Industrial Safety & Engineering Solutions",
-    text: "Ganesh Trading Company is a trusted distributor and stockist providing quality safety equipment, fire equipment, welding solutions, engineering machinery, power tools and industrial products.",
-    primary: { label: "Explore Products", href: "#products" },
+    image: heroPpeAsset.url,
+    alt: "Safety helmet, hi-vis vest, safety boots, gloves, goggles, respirator, fire extinguisher and first aid kit",
+    eyebrow: "Safety & Fire Equipment",
+    title: "Complete Personal Protective & Fire Safety Equipment",
+    text: "Helmets, safety shoes, hand gloves, goggles, respirators, hi-vis jackets, fire extinguishers, hose reels and first aid kits — certified protection for every worksite.",
+    primary: { label: "Explore Safety Range", href: "#products" },
     secondary: { label: "Get a Quote", href: "#contact" },
   },
   {
-    image: heroSolutions,
-    alt: "Industrial warehouse racks stocked with welding machines, power tools and safety equipment",
-    eyebrow: "Complete Industrial Solutions",
-    title: "Quality Industrial Products. Trusted Solutions.",
-    text: "From road safety and personal protective equipment to welding systems, engineering machinery and professional tools — find everything you need under one roof.",
-    primary: { label: "View Product Range", href: "#products" },
+    image: heroRoadAsset.url,
+    alt: "Road safety barricade, traffic cones, speed breaker, road studs and queue barriers on a highway",
+    eyebrow: "Road Safety Products",
+    title: "Road Safety & Traffic Management Solutions",
+    text: "Traffic cones, barricades, speed breakers, road studs, delineators and retractable barriers to keep roads, plants and construction zones safe.",
+    primary: { label: "View Road Safety", href: "#products" },
     secondary: { label: "Contact Us", href: "#contact" },
   },
   {
-    image: heroPartner,
-    alt: "Welder joining steel with bright sparks in a heavy engineering workshop",
-    eyebrow: "Trusted Industrial Partner",
-    title: "Your Reliable Partner for Industrial & Engineering Requirements",
-    text: "Serving industries with dependable products, authorised brands and unmatched customer service for more than seven decades.",
-    primary: { label: "Our Industries", href: "#industries" },
+    image: heroWeldingAsset.url,
+    alt: "Welding rectifier, transformer, inverter MIG/TIG welding machines, generator, electrodes and welding accessories",
+    eyebrow: "Welding & Power Solutions",
+    title: "Welding Machines, Consumables & Power Equipment",
+    text: "Rectifiers, transformers, IGBT inverters, MIG/TIG machines, generators, electrodes, wires, torches and regulators from authorised brands.",
+    primary: { label: "Welding Products", href: "#products" },
     secondary: { label: "Talk to Us", href: "#contact" },
   },
 ];
