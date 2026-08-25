@@ -67,6 +67,7 @@ function Index() {
         <Products />
         <Industries />
         <WhyUs />
+        <Testimonials />
         <LegacyBanner />
         <Contact />
         <FinalCta />
