@@ -34,11 +34,11 @@ export function Header() {
           <img
             src={logo.url}
             alt="Ganesh Trading Company logo"
-            width={160}
-            height={160}
+            width={200}
+            height={200}
             className={cn(
               "w-auto transition-all duration-300",
-              scrolled ? "h-11 sm:h-12" : "h-14 sm:h-16",
+              scrolled ? "h-13 sm:h-14" : "h-16 sm:h-20",
             )}
           />
         </a>

@@ -39,6 +39,29 @@ export function Contact() {
       setSent(false);
       return;
     }
+
+    // Prepare WhatsApp Message
+    const name = get("name");
+    const company = get("company") || "Not specified";
+    const phone = get("phone");
+    const email = get("email");
+    const industry = get("industry") || "Not specified";
+    const requirement = get("requirement") || "Not specified";
+    const message = get("message");
+
+    const msg = `*New Enquiry from Website*
+----------------------------------------
+*Name:* ${name}
+*Company:* ${company}
+*Phone:* ${phone}
+*Email:* ${email}
+*Industry:* ${industry}
+*Requirement:* ${requirement}
+*Message:* ${message}`;
+
+    const url = `https://wa.me/${siteConfig.whatsapp}?text=${encodeURIComponent(msg)}`;
+    window.open(url, "_blank");
+
     setSent(true);
     form.reset();
   }
@@ -79,10 +102,6 @@ export function Contact() {
               </li>
             ))}
           </ul>
-
-          <a href="#contact-form" className="btn-base btn-ink mt-9">
-            Request a Quote
-          </a>
         </Reveal>
 
         <Reveal direction="right" className="card-industrial p-6 sm:p-8">

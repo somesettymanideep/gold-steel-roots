@@ -1,4 +1,3 @@
-import { ArrowRight } from "lucide-react";
 import catRoad from "@/assets/cat-road.jpg";
 import catSafety from "@/assets/cat-safety.jpg";
 import catWelding from "@/assets/cat-welding.jpg";
@@ -139,7 +138,7 @@ export function Products() {
                   {cat.description}
                 </p>
                 <ul className="mt-4 space-y-1.5">
-                  {cat.items.slice(0, 4).map((item) => (
+                  {cat.items.map((item) => (
                     <li
                       key={item}
                       className="flex items-start gap-2 text-sm text-muted-foreground"
@@ -149,16 +148,6 @@ export function Products() {
                     </li>
                   ))}
                 </ul>
-                <p className="mt-4 text-xs font-bold tracking-widest text-gold-dark uppercase">
-                  {cat.items.length}+ Product Lines
-                </p>
-                <a
-                  href="#contact"
-                  className="mt-6 inline-flex items-center gap-2 self-start border-b-2 border-transparent pb-1 text-sm font-bold text-ink transition-all group-hover:border-gold group-hover:text-gold-dark"
-                >
-                  Explore Products
-                  <ArrowRight className="size-4 transition-transform group-hover:translate-x-1" />
-                </a>
               </div>
             </Reveal>
           ))}

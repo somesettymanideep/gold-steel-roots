@@ -2,22 +2,35 @@ import { Reveal } from "@/components/Reveal";
 
 // Replace these with real partner logo images when available.
 const partners = [
-  "Taparia",
-  "De Neers",
-  "ESAB",
-  "Bosch",
-  "Karam",
-  "3M Safety",
-  "Ador Welding",
-  "Makita",
+  { name: "Taparia", logo: "/partners/taparia.png" },
+  { name: "De Neers", logo: "/partners/deneers.jpg" },
+  { name: "ESAB" },
+  { name: "Bosch" },
+  { name: "Karam" },
+  { name: "3M Safety" },
+  { name: "Ador Welding", logo: "/partners/ador.jpg" },
+  { name: "Makita" },
+  { name: "Satyam Composites", logo: "/partners/satyam.png" },
+  { name: "Eibenstock Positron", logo: "/partners/eibenstock.png" },
+  { name: "Addison", logo: "/partners/addison.png" },
+  { name: "Nilkamal", logo: "/partners/nilkamal.jpg" },
+  { name: "Stanley Black & Decker", logo: "/partners/stanley.png" },
 ];
 
-function LogoTile({ name }: { name: string }) {
+function LogoTile({ name, logo }: { name: string; logo?: string }) {
   return (
-    <div className="group grid h-24 w-44 shrink-0 place-items-center rounded-md bg-card px-6 grayscale transition-all duration-300 hover:grayscale-0">
-      <span className="font-display text-lg font-bold tracking-wide text-muted-foreground transition-colors group-hover:text-gold-dark">
-        {name}
-      </span>
+    <div className="group grid h-24 w-44 shrink-0 place-items-center rounded-md bg-card px-6">
+      {logo ? (
+        <img
+          src={logo}
+          alt={`${name} logo`}
+          className="max-h-16 max-w-[90%] object-contain opacity-75 transition-opacity group-hover:opacity-100"
+        />
+      ) : (
+        <span className="font-display text-lg font-bold tracking-wide text-muted-foreground transition-colors group-hover:text-gold-dark text-center leading-tight">
+          {name}
+        </span>
+      )}
     </div>
   );
 }
@@ -38,8 +51,8 @@ export function Partners() {
 
       <Reveal delay={120} className="mt-12 overflow-hidden">
         <div className="marquee-track flex w-max items-center gap-4">
-          {[...partners, ...partners].map((name, i) => (
-            <LogoTile key={`${name}-${i}`} name={name} />
+          {[...partners, ...partners].map((partner, i) => (
+            <LogoTile key={`${partner.name}-${i}`} name={partner.name} logo={partner.logo} />
           ))}
         </div>
       </Reveal>
