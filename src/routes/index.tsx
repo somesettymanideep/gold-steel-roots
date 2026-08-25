@@ -7,6 +7,7 @@ import { About } from "@/components/site/About";
 import { Products } from "@/components/site/Products";
 import { Industries } from "@/components/site/Industries";
 import { WhyUs } from "@/components/site/WhyUs";
+import { Testimonials } from "@/components/site/Testimonials";
 import { LegacyBanner } from "@/components/site/LegacyBanner";
 import { Contact } from "@/components/site/Contact";
 import { FinalCta } from "@/components/site/FinalCta";
