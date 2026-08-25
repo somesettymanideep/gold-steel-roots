@@ -4,7 +4,7 @@ import { mapDirectionsUrl, navLinks, siteConfig } from "@/lib/site-config";
 
 export function Footer() {
   return (
-    <footer className="bg-ink text-white/70">
+    <footer className="bg-ink text-white/70 border-t-2 border-gold">
       <div className="mx-auto grid max-w-7xl gap-10 px-4 py-16 sm:px-6 md:grid-cols-2 lg:grid-cols-4 lg:px-8">
         <div>
           <img

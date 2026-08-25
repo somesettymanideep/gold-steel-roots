@@ -58,13 +58,10 @@ export function Header() {
         <div className="ml-auto flex items-center gap-2 lg:ml-6">
           <a
             href={siteConfig.phoneHref}
-            className="hidden items-center gap-2 text-sm font-semibold text-foreground/80 transition-colors hover:text-gold-dark xl:flex"
+            className="hidden items-center gap-2 text-sm font-semibold text-foreground/80 transition-colors hover:text-gold-dark lg:flex"
           >
             <Phone className="size-4 text-gold-dark" aria-hidden="true" />
             {siteConfig.phone}
-          </a>
-          <a href="#contact" className="btn-base btn-gold hidden !px-5 !py-3 sm:inline-flex">
-            Get a Quote
           </a>
           <button
             type="button"
@@ -91,13 +88,6 @@ export function Header() {
                 {link.label}
               </a>
             ))}
-            <a
-              href="#contact"
-              onClick={() => setOpen(false)}
-              className="btn-base btn-gold mt-4 mb-2"
-            >
-              Get a Quote
-            </a>
           </nav>
         </div>
       )}

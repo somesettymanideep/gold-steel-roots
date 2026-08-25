@@ -24,7 +24,7 @@ function LogoTile({ name, logo }: { name: string; logo?: string }) {
         <img
           src={logo}
           alt={`${name} logo`}
-          className="max-h-16 max-w-[90%] object-contain opacity-75 transition-opacity group-hover:opacity-100"
+          className="max-h-16 max-w-[90%] object-contain"
         />
       ) : (
         <span className="font-display text-lg font-bold tracking-wide text-muted-foreground transition-colors group-hover:text-gold-dark text-center leading-tight">

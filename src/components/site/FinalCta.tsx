@@ -15,7 +15,7 @@ export function FinalCta() {
       <div className="absolute inset-0 bg-[oklch(0.09_0_0/0.84)]" />
 
       <Reveal className="relative mx-auto max-w-3xl px-4 text-center sm:px-6">
-        <h2 className="heading-lg text-white">Looking for Reliable Industrial Products?</h2>
+        <h2 className="heading-lg text-white">Need Expert Advice or Bulk Quote</h2>
         <span className="gold-rule mx-auto mt-5 block" />
         <p className="mt-5 text-base leading-relaxed text-white/80 sm:text-lg">
           Talk to Ganesh Trading Company for quality products, trusted brands and dependable
@@ -24,9 +24,6 @@ export function FinalCta() {
         <div className="mt-9 flex flex-wrap justify-center gap-3">
           <a href="#contact" className="btn-base btn-gold">
             Get a Quote
-          </a>
-          <a href="#contact" className="btn-base btn-ghost-light">
-            Contact Us
           </a>
         </div>
       </Reveal>

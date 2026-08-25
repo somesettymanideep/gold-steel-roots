@@ -1,5 +1,4 @@
 import { Check } from "lucide-react";
-import aboutImage from "@/assets/about-warehouse.jpg";
 import { Reveal } from "@/components/Reveal";
 
 const highlights = [
@@ -18,8 +17,8 @@ export function About() {
           <div className="absolute -top-5 -left-5 hidden h-32 w-32 border-t-4 border-l-4 border-gold sm:block" />
           <div className="absolute -right-5 -bottom-5 hidden h-32 w-32 border-r-4 border-b-4 border-gold sm:block" />
           <img
-            src={aboutImage}
-            alt="Ganesh Trading Company warehouse stocked with industrial safety equipment and tools"
+            src="/about-company.jpg"
+            alt="Ganesh Trading Company product showcase, 71 years of trust, and business highlights"
             width={1200}
             height={1000}
             loading="lazy"
@@ -54,10 +53,6 @@ export function About() {
               </li>
             ))}
           </ul>
-
-          <a href="#contact" className="btn-base btn-ink mt-10">
-            Learn More About Us
-          </a>
         </Reveal>
       </div>
     </section>
