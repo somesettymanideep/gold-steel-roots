@@ -1,18 +1,19 @@
-import ctaIndustrial from "@/assets/cta-industrial.jpg";
+import equipmentAsset from "@/assets/all-equipment.png.asset.json";
 import { Reveal } from "@/components/Reveal";
 
 export function FinalCta() {
   return (
     <section className="relative isolate overflow-hidden bg-ink py-24 lg:py-28">
       <img
-        src={ctaIndustrial}
-        alt="Industrial machinery and safety equipment in a supplier warehouse"
+        src={equipmentAsset.url}
+        alt="Road safety cones, PPE, fire extinguishers, welding machines, power tools and industrial equipment"
         width={1920}
-        height={1080}
+        height={780}
         loading="lazy"
         className="absolute inset-0 size-full object-cover"
       />
-      <div className="absolute inset-0 bg-[oklch(0.09_0_0/0.84)]" />
+      <div className="absolute inset-0 bg-[oklch(0.09_0_0/0.82)]" />
+
 
       <Reveal className="relative mx-auto max-w-3xl px-4 text-center sm:px-6">
         <h2 className="heading-lg text-white">Need Expert Advice or Bulk Quote</h2>
