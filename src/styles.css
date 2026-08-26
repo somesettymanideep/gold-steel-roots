@@ -356,10 +356,23 @@
   }
 }
 
+@utility marquee-track-slow {
+  animation: slide-marquee 60s linear infinite;
+  &:hover {
+    animation-play-state: paused;
+  }
+}
+
+@utility marquee-container {
+  mask-image: linear-gradient(to right, transparent, white 8%, white 92%, transparent);
+  -webkit-mask-image: linear-gradient(to right, transparent, white 8%, white 92%, transparent);
+}
+
 @media (prefers-reduced-motion: reduce) {
   .reveal,
   .ken-burns,
-  .marquee-track {
+  .marquee-track,
+  .marquee-track-slow {
     animation: none !important;
     transition: none !important;
     opacity: 1 !important;

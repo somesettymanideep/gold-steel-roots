@@ -14,8 +14,8 @@ type Stat = {
 const stats: Stat[] = [
   { value: 71, suffix: "+", label: ["Years of", "Industry", "Experience"], icon: Award },
   { value: 1000, suffix: "+", label: ["Industrial", "Products"], icon: Package },
-  { text: "Multiple", label: ["Authorised", "Brands"], icon: ShieldCheck },
-  { text: "Pan-Industry", label: ["Solutions"], icon: Users },
+  { value: 100, suffix: "+", label: ["Authorised", "Brands"], icon: ShieldCheck },
+  { value: 100, suffix: "%", label: ["Customer", "Satisfaction"], icon: Users },
 ];
 
 function useInView<T extends HTMLElement>() {

@@ -4,6 +4,7 @@ import heroPpeAsset from "@/assets/hero-ppe-fire.png.asset.json";
 import heroRoadAsset from "@/assets/hero-road-safety.png.asset.json";
 import heroWeldingAsset from "@/assets/hero-welding.png.asset.json";
 import { cn } from "@/lib/utils";
+import { siteConfig } from "@/lib/site-config";
 
 const slides = [
   {
@@ -22,7 +23,7 @@ const slides = [
     title: "Road Safety & Traffic Management Solutions",
     text: "Traffic cones, barricades, speed breakers, road studs, delineators and retractable barriers to keep roads, plants and construction zones safe.",
     primary: { label: "View Road Safety", href: "#products" },
-    secondary: { label: "Contact Us", href: "#contact" },
+    secondary: { label: "Contact Us", href: siteConfig.phoneHref },
   },
   {
     image: heroWeldingAsset.url,
@@ -31,7 +32,7 @@ const slides = [
     title: "Welding Machines, Consumables & Power Equipment",
     text: "Rectifiers, transformers, IGBT inverters, MIG/TIG machines, generators, electrodes, wires, torches and regulators from authorised brands.",
     primary: { label: "Welding Products", href: "#products" },
-    secondary: { label: "Talk to Us", href: "#contact" },
+    secondary: { label: "Talk to Us", href: siteConfig.phoneHref },
   },
 ];
 

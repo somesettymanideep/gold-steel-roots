@@ -83,14 +83,9 @@ export function Footer() {
       <div className="border-t border-white/10">
         <div className="mx-auto flex max-w-7xl flex-col gap-3 px-4 py-6 text-sm sm:flex-row sm:items-center sm:justify-between sm:px-6 lg:px-8">
           <p>© 2026 {siteConfig.name}. All Rights Reserved.</p>
-          <div className="flex gap-6">
-            <a href="#home" className="transition-colors hover:text-gold">
-              Privacy Policy
-            </a>
-            <a href="#home" className="transition-colors hover:text-gold">
-              Terms &amp; Conditions
-            </a>
-          </div>
+          <p className="text-white/50">
+            Designed &amp; Developed by <span className="text-gold font-semibold">Ayrondigitalsolutions</span>
+          </p>
         </div>
       </div>
     </footer>

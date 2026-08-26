@@ -38,7 +38,7 @@ export function Header() {
             height={200}
             className={cn(
               "w-auto transition-all duration-300",
-              scrolled ? "h-13 sm:h-14" : "h-16 sm:h-20",
+              scrolled ? "h-16 sm:h-18" : "h-18 sm:h-22",
             )}
           />
         </a>
@@ -55,13 +55,14 @@ export function Header() {
           ))}
         </nav>
 
-        <div className="ml-auto flex items-center gap-2 lg:ml-6">
+        <div className="ml-auto flex items-center gap-2 sm:gap-3 lg:ml-6">
           <a
             href={siteConfig.phoneHref}
-            className="hidden items-center gap-2 text-sm font-semibold text-foreground/80 transition-colors hover:text-gold-dark lg:flex"
+            className="flex items-center gap-2 rounded-md bg-gold px-3 py-2 text-xs font-bold text-ink transition-all hover:bg-gold-dark hover:scale-[1.02] active:scale-[0.98] sm:px-4 sm:text-sm"
           >
-            <Phone className="size-4 text-gold-dark" aria-hidden="true" />
-            {siteConfig.phone}
+            <Phone className="size-4 shrink-0 text-ink" aria-hidden="true" />
+            <span className="hidden sm:inline">{siteConfig.phone}</span>
+            <span className="sm:hidden">Call Us</span>
           </a>
           <button
             type="button"
