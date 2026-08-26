@@ -17,7 +17,7 @@ export function About() {
           <div className="absolute -top-5 -left-5 hidden h-32 w-32 border-t-4 border-l-4 border-gold sm:block" />
           <div className="absolute -right-5 -bottom-5 hidden h-32 w-32 border-r-4 border-b-4 border-gold sm:block" />
           <img
-            src="/about-company.jpg"
+            src={`${import.meta.env.BASE_URL}about-company.jpg`}
             alt="Ganesh Trading Company product showcase, 71 years of trust, and business highlights"
             width={1200}
             height={1000}

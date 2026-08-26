@@ -15,11 +15,17 @@ const partners = [
 ];
 
 function LogoTile({ name, logo }: { name: string; logo?: string | undefined }) {
+  const logoUrl = logo
+    ? logo.startsWith("/")
+      ? `${import.meta.env.BASE_URL}${logo.slice(1)}`
+      : logo
+    : undefined;
+
   return (
     <div className="group grid h-24 w-40 shrink-0 place-items-center rounded-md border border-border bg-card px-5 transition-all duration-300 hover:border-gold hover:shadow-[var(--shadow-card-hover)] sm:w-44">
-      {logo ? (
+      {logoUrl ? (
         <img
-          src={logo}
+          src={logoUrl}
           alt={`${name} logo`}
           className="max-h-14 max-w-[90%] object-contain"
           loading="lazy"
