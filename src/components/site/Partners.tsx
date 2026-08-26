@@ -17,7 +17,7 @@ const partners = [
   { name: "Stanley Black & Decker", logo: "/partners/stanley.png" },
 ];
 
-function LogoTile({ name, logo }: { name: string; logo?: string }) {
+function LogoTile({ name, logo }: { name: string; logo?: string | undefined }) {
   return (
     <div className="group grid h-24 w-44 shrink-0 place-items-center rounded-md bg-card px-6">
       {logo ? (
