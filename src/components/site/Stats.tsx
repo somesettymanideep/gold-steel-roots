@@ -39,7 +39,7 @@ function useInView<T extends HTMLElement>() {
   return { ref, inView };
 }
 
-function CountUp({ target, suffix }: { target: number; suffix?: string }) {
+function CountUp({ target, suffix }: { target: number; suffix?: string | undefined }) {
   const [value, setValue] = useState(0);
   const { ref, inView } = useInView<HTMLSpanElement>();
 
