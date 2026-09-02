@@ -1,4 +1,4 @@
-import logo from "@/assets/ganesh-logo.jpg.asset.json";
+import logo from "@/assets/logo.png";
 import { categories } from "@/components/site/Products";
 import { mapDirectionsUrl, navLinks, siteConfig } from "@/lib/site-config";
 
@@ -8,12 +8,12 @@ export function Footer() {
       <div className="mx-auto grid max-w-7xl gap-10 px-4 py-16 sm:px-6 md:grid-cols-2 lg:grid-cols-4 lg:px-8">
         <div>
           <img
-            src={logo.url}
+            src={logo}
             alt="Ganesh Trading Company logo"
-            width={200}
-            height={200}
+            width={280}
+            height={45}
             loading="lazy"
-            className="h-20 w-auto rounded-sm bg-white p-1"
+            className="h-12 w-auto rounded bg-white px-3 py-1.5 object-contain shadow-sm"
           />
           <p className="mt-5 text-sm leading-relaxed">
             Trusted distributor and stockist with 71+ years of industrial experience.

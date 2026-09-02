@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { Menu, Phone, X } from "lucide-react";
-import logo from "@/assets/ganesh-logo.jpg.asset.json";
+import logo from "@/assets/logo.png";
 import { navLinks, siteConfig } from "@/lib/site-config";
 import { cn } from "@/lib/utils";
 
@@ -32,13 +32,13 @@ export function Header() {
           aria-label={`${siteConfig.name} home`}
         >
           <img
-            src={logo.url}
+            src={logo}
             alt="Ganesh Trading Company logo"
-            width={200}
-            height={200}
+            width={320}
+            height={51}
             className={cn(
-              "w-auto transition-all duration-300",
-              scrolled ? "h-16 sm:h-18" : "h-18 sm:h-22",
+              "w-auto max-w-[210px] sm:max-w-[280px] md:max-w-none transition-all duration-300 object-contain",
+              scrolled ? "h-10 sm:h-12" : "h-12 sm:h-14",
             )}
           />
         </a>
