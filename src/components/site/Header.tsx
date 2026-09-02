@@ -27,18 +27,20 @@ export function Header() {
           href="#home"
           className={cn(
             "flex shrink-0 items-center transition-all duration-300",
-            scrolled ? "py-2" : "py-3",
+            scrolled ? "py-1.5 sm:py-2" : "py-2 sm:py-3",
           )}
           aria-label={`${siteConfig.name} home`}
         >
           <img
             src={logo}
             alt="Ganesh Trading Company logo"
-            width={320}
-            height={51}
+            width={380}
+            height={60}
             className={cn(
-              "w-auto max-w-[210px] sm:max-w-[280px] md:max-w-none transition-all duration-300 object-contain",
-              scrolled ? "h-10 sm:h-12" : "h-12 sm:h-14",
+              "w-auto transition-all duration-300 object-contain",
+              scrolled
+                ? "h-13 sm:h-16 md:h-18 max-w-[240px] sm:max-w-[320px] md:max-w-[380px]"
+                : "h-16 sm:h-20 md:h-22 max-w-[270px] sm:max-w-[360px] md:max-w-[440px]",
             )}
           />
         </a>

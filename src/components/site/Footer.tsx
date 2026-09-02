@@ -10,10 +10,10 @@ export function Footer() {
           <img
             src={logo}
             alt="Ganesh Trading Company logo"
-            width={280}
-            height={45}
+            width={380}
+            height={60}
             loading="lazy"
-            className="h-12 w-auto rounded bg-white px-3 py-1.5 object-contain shadow-sm"
+            className="h-16 sm:h-18 w-auto rounded-md bg-white px-3.5 py-2 object-contain shadow-sm max-w-[320px]"
           />
           <p className="mt-5 text-sm leading-relaxed">
             Trusted distributor and stockist with 71+ years of industrial experience.
