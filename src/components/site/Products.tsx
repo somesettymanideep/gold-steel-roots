@@ -5,6 +5,7 @@ import catTools from "@/assets/cat-tools.jpg";
 import catMachinery from "@/assets/cat-machinery.jpg";
 import catPumps from "@/assets/cat-pumps.jpg";
 import catMarine from "@/assets/cat-marine.jpg";
+import catTorch from "@/assets/cat-torch.jpg";
 import { Reveal } from "@/components/Reveal";
 
 export const categories = [
@@ -47,6 +48,18 @@ export const categories = [
       "Life Jackets",
       "Life Buoys",
       "Inflatable Boats",
+    ],
+  },
+  {
+    name: "Long Distance Torch Lights",
+    image: catTorch,
+    alt: "High-intensity waterproof long distance torch light for surface marine exposure and industrial use",
+    description: "High-intensity waterproof torches and searchlights engineered for surface marine exposure and extreme conditions.",
+    items: [
+      "Surface Marine Exposure",
+      "Waterproof Torch Light with IP67/IP68",
+      "Long Distance Search Lights",
+      "High-Beam Industrial Flashlights",
     ],
   },
   {
