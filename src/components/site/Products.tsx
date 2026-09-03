@@ -4,6 +4,7 @@ import catWelding from "@/assets/cat-welding.jpg";
 import catTools from "@/assets/cat-tools.jpg";
 import catMachinery from "@/assets/cat-machinery.jpg";
 import catPumps from "@/assets/cat-pumps.jpg";
+import catMarine from "@/assets/cat-marine.jpg";
 import { Reveal } from "@/components/Reveal";
 
 export const categories = [
@@ -35,6 +36,17 @@ export const categories = [
       "Safety Jackets",
       "First Aid Kits",
       "Fire Fighting Equipment",
+    ],
+  },
+  {
+    name: "Marine Life-Saving Equipment & (PFDs)",
+    image: catMarine,
+    alt: "Life jackets, life buoys, and inflatable rescue boats for marine safety",
+    description: "Certified marine safety solutions, life-saving appliances and personal flotation devices.",
+    items: [
+      "Life Jackets",
+      "Life Buoys",
+      "Inflatable Boats",
     ],
   },
   {
