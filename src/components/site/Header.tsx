@@ -45,7 +45,7 @@ export function Header() {
           />
         </a>
 
-        <nav className="ml-auto hidden items-center gap-7 lg:flex" aria-label="Main navigation">
+        <nav className="ml-auto hidden items-center gap-4 xl:gap-7 lg:flex" aria-label="Main navigation">
           {navLinks.map((link) => (
             <a
               key={link.href}

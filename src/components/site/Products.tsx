@@ -6,6 +6,7 @@ import catMachinery from "@/assets/cat-machinery.jpg";
 import catPumps from "@/assets/cat-pumps.jpg";
 import catMarine from "@/assets/cat-marine.jpg";
 import catTorch from "@/assets/cat-torch.jpg";
+import catPaints from "@/assets/cat-paints.jpg";
 import { Reveal } from "@/components/Reveal";
 
 export const categories = [
@@ -26,7 +27,7 @@ export const categories = [
   {
     name: "Safety & Fire Equipment",
     image: catSafety,
-    alt: "Hard hat, safety gloves, goggles, ear protection and fire extinguishers",
+    alt: "Hard hat, safety gloves, goggles, ear protection, fire extinguishers, industrial shoes and gum boots",
     description: "Complete personal protective equipment and fire fighting solutions.",
     items: [
       "Leather, Rubber, Cotton & PVC Gloves",
@@ -37,6 +38,7 @@ export const categories = [
       "Safety Jackets",
       "First Aid Kits",
       "Fire Fighting Equipment",
+      "Alcohol Breath Analyzer",
     ],
   },
   {
@@ -105,7 +107,7 @@ export const categories = [
       "Masonry Drills & Tile Cutter Blades",
       "Wire Brushes & Rivet Guns",
       "Bench Grinders",
-      "Paints & Emery Papers",
+      "Emery Papers & Abrasives",
     ],
   },
   {
@@ -120,6 +122,22 @@ export const categories = [
       "Spray Guns",
       "D.P.T. Test Materials",
       "Anticipators",
+    ],
+  },
+  {
+    name: "Paints",
+    image: catPaints,
+    alt: "Super Decolite synthetic enamel paint, primers, thinners, and painting supplies",
+    description: "Industrial, metal, and architectural paints, primers, thinners and application tools.",
+    items: [
+      "Metal Primers",
+      "Zen / Zinc Primers",
+      "Cement Primers",
+      "Emulsion",
+      "Epoxy Paints",
+      "Enamel Thinner",
+      "Brushes & Rollers",
+      "Consumables",
     ],
   },
 ];

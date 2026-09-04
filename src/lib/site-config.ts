@@ -23,5 +23,6 @@ export const navLinks = [
   { label: "Products", href: "#products" },
   { label: "Industries We Serve", href: "#industries" },
   { label: "Our Partners", href: "#partners" },
+  { label: "Clients", href: "#clients" },
   { label: "Contact", href: "#contact" },
 ];

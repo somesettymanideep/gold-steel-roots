@@ -19,8 +19,8 @@ export function About() {
           <img
             src={`${import.meta.env.BASE_URL}about-company.jpg`}
             alt="Ganesh Trading Company product showcase, 71 years of trust, and business highlights"
-            width={1200}
-            height={1000}
+            width={1024}
+            height={1024}
             loading="lazy"
             className="relative w-full rounded-md object-cover shadow-[var(--shadow-card-hover)]"
           />

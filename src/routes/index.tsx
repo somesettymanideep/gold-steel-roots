@@ -4,12 +4,13 @@ import { Hero } from "@/components/site/Hero";
 import { Stats } from "@/components/site/Stats";
 import { Partners } from "@/components/site/Partners";
 import { About } from "@/components/site/About";
-import { Founder } from "@/components/site/Founder";
+import { LegacyVision } from "@/components/site/LegacyVision";
 import { Products } from "@/components/site/Products";
 import { Industries } from "@/components/site/Industries";
 import { WhyUs } from "@/components/site/WhyUs";
 import { Testimonials } from "@/components/site/Testimonials";
 import { LegacyBanner } from "@/components/site/LegacyBanner";
+import { Clients } from "@/components/site/Clients";
 import { Contact } from "@/components/site/Contact";
 import { FinalCta } from "@/components/site/FinalCta";
 import { Footer } from "@/components/site/Footer";
@@ -48,7 +49,7 @@ export const Route = createFileRoute("/")({
           address: { "@type": "PostalAddress", streetAddress: siteConfig.address },
           openingHours: siteConfig.hours,
           slogan: siteConfig.tagline,
-          foundingDate: "1955",
+          foundingDate: "1952",
         }),
       },
     ],
@@ -65,12 +66,13 @@ function Index() {
         <Stats />
         <Partners />
         <About />
-        <Founder />
+        <LegacyVision />
         <Products />
         <Industries />
         <WhyUs />
         <Testimonials />
         <LegacyBanner />
+        <Clients />
         <Contact />
         <FinalCta />
       </main>
