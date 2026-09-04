@@ -42,27 +42,32 @@ export function LegacyVision() {
 
               {/* Portrait Frame */}
               <div className="relative mt-6 overflow-hidden rounded-md border border-border bg-surface">
-                <div className="relative aspect-[16/10] w-full overflow-hidden bg-gradient-to-br from-ink/90 via-ink/80 to-ink/95">
-                  {/* Decorative Vintage Overlay Pattern */}
-                  <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(230,157,2,0.15),transparent_70%)]" />
-                  
-                  <div className="relative flex size-full flex-col items-center justify-center p-6 text-center">
-                    <div className="grid size-16 place-items-center rounded-full border-2 border-gold/40 bg-ink/70 text-gold shadow-md sm:size-20">
-                      <Users className="size-8 sm:size-10 text-gold" aria-hidden="true" />
+                <div className="relative aspect-[16/10] w-full overflow-hidden">
+                  <img
+                    src={`${import.meta.env.BASE_URL}legacy/founders-1952.jpg`}
+                    alt="The Two Founding Brothers - Ganesh Trading & Co 1952"
+                    width={1024}
+                    height={576}
+                    loading="lazy"
+                    className="size-full object-cover transition-transform duration-700 group-hover:scale-105"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-ink/90 via-ink/30 to-transparent" />
+                  <div className="absolute bottom-3 left-4 right-4 flex items-end justify-between">
+                    <div>
+                      <p className="font-display text-base font-bold text-white sm:text-lg">
+                        The Founding Brothers
+                      </p>
+                      <p className="text-xs text-white/80">
+                        First Generation Founders • Est. 1952, Vijayawada
+                      </p>
                     </div>
-                    <p className="mt-4 font-display text-lg font-bold text-white sm:text-xl">
-                      The Founding Brothers
-                    </p>
-                    <p className="mt-1 text-xs font-medium text-white/70 sm:text-sm">
-                      Pioneers of Ganesh Trading & Co • 1952
-                    </p>
-                    <span className="mt-3 inline-block rounded border border-gold/40 bg-gold/10 px-2.5 py-0.5 text-[11px] font-semibold text-gold">
-                      First Generation Founders
+                    <span className="rounded border border-gold/40 bg-ink/80 px-2.5 py-1 text-[11px] font-semibold text-gold backdrop-blur-sm">
+                      1952
                     </span>
                   </div>
                 </div>
 
-                <div className="border-t border-border/80 bg-card p-4 text-center">
+                <div className="border-t border-border/80 bg-card p-3.5 text-center">
                   <p className="text-xs italic text-muted-foreground">
                     "Built on honesty, personal relationships, and unwavering trade integrity."
                   </p>
@@ -117,27 +122,32 @@ export function LegacyVision() {
 
               {/* Portrait Frame */}
               <div className="relative mt-6 overflow-hidden rounded-md border border-border bg-surface">
-                <div className="relative aspect-[16/10] w-full overflow-hidden bg-gradient-to-br from-ink/90 via-ink/80 to-ink/95">
-                  {/* Decorative Modern Overlay Pattern */}
-                  <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(230,157,2,0.18),transparent_70%)]" />
-
-                  <div className="relative flex size-full flex-col items-center justify-center p-6 text-center">
-                    <div className="grid size-16 place-items-center rounded-full border-2 border-gold bg-ink/80 text-gold shadow-md sm:size-20">
-                      <Users className="size-8 sm:size-10 text-gold" aria-hidden="true" />
+                <div className="relative aspect-[16/10] w-full overflow-hidden">
+                  <img
+                    src={`${import.meta.env.BASE_URL}legacy/patel-brothers-1980.jpg`}
+                    alt="Dharmendra Patel & Yatin Patel - Handover 1980"
+                    width={1024}
+                    height={576}
+                    loading="lazy"
+                    className="size-full object-cover transition-transform duration-700 group-hover:scale-105"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-ink/90 via-ink/30 to-transparent" />
+                  <div className="absolute bottom-3 left-4 right-4 flex items-end justify-between">
+                    <div>
+                      <p className="font-display text-base font-bold text-white sm:text-lg">
+                        Dharmendra Patel & Yatin Patel
+                      </p>
+                      <p className="text-xs text-white/80">
+                        Second Generation Leadership • 1980 to Present
+                      </p>
                     </div>
-                    <p className="mt-4 font-display text-lg font-bold text-white sm:text-xl">
-                      Dharmendra Patel & Yatin Patel
-                    </p>
-                    <p className="mt-1 text-xs font-medium text-white/70 sm:text-sm">
-                      Leadership Handover • 1980 to Present
-                    </p>
-                    <span className="mt-3 inline-block rounded border border-gold bg-gold px-2.5 py-0.5 text-[11px] font-bold text-ink">
-                      Managing Leadership
+                    <span className="rounded border border-gold bg-gold px-2.5 py-1 text-[11px] font-bold text-ink shadow-sm">
+                      1980
                     </span>
                   </div>
                 </div>
 
-                <div className="border-t border-border/80 bg-card p-4 text-center">
+                <div className="border-t border-border/80 bg-card p-3.5 text-center">
                   <p className="text-xs italic text-muted-foreground">
                     "Modernizing industrial distribution while preserving our heritage of trust."
                   </p>

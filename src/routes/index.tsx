@@ -15,6 +15,7 @@ import { Contact } from "@/components/site/Contact";
 import { FinalCta } from "@/components/site/FinalCta";
 import { Footer } from "@/components/site/Footer";
 import { FloatingContact } from "@/components/site/FloatingContact";
+import { FloatingSocials } from "@/components/site/FloatingSocials";
 import { siteConfig } from "@/lib/site-config";
 
 const title =
@@ -78,6 +79,7 @@ function Index() {
       </main>
       <Footer />
       <FloatingContact />
+      <FloatingSocials />
     </div>
   );
 }

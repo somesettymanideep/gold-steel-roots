@@ -1,3 +1,4 @@
+import { Facebook, Instagram, Youtube } from "lucide-react";
 import logo from "@/assets/logo.png";
 import { categories } from "@/components/site/Products";
 import { mapDirectionsUrl, navLinks, siteConfig } from "@/lib/site-config";
@@ -18,6 +19,35 @@ export function Footer() {
           <p className="mt-5 text-sm leading-relaxed">
             Trusted distributor and stockist with 71+ years of industrial experience.
           </p>
+          <div className="mt-5 flex items-center gap-3">
+            <a
+              href={siteConfig.socials.youtube}
+              target="_blank"
+              rel="noreferrer noopener"
+              aria-label="YouTube"
+              className="grid size-9 place-items-center rounded-full bg-white/10 text-white transition-all hover:bg-[#FF0000] hover:text-white"
+            >
+              <Youtube className="size-4" />
+            </a>
+            <a
+              href={siteConfig.socials.instagram}
+              target="_blank"
+              rel="noreferrer noopener"
+              aria-label="Instagram"
+              className="grid size-9 place-items-center rounded-full bg-white/10 text-white transition-all hover:bg-gradient-to-tr hover:from-[#f09433] hover:via-[#dc2743] hover:to-[#bc1888] hover:text-white"
+            >
+              <Instagram className="size-4" />
+            </a>
+            <a
+              href={siteConfig.socials.facebook}
+              target="_blank"
+              rel="noreferrer noopener"
+              aria-label="Facebook"
+              className="grid size-9 place-items-center rounded-full bg-white/10 text-white transition-all hover:bg-[#1877F2] hover:text-white"
+            >
+              <Facebook className="size-4" />
+            </a>
+          </div>
         </div>
 
         <div>
