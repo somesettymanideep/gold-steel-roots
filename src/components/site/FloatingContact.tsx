@@ -11,13 +11,27 @@ const WhatsAppIcon = (props: React.SVGProps<SVGSVGElement>) => (
 
 export function FloatingContact() {
   const [showScroll, setShowScroll] = useState(false);
+  const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
+      const hero = document.getElementById("home");
+      if (hero) {
+        const rect = hero.getBoundingClientRect();
+        setIsVisible(rect.bottom <= 80);
+      } else {
+        setIsVisible(window.scrollY > 400);
+      }
       setShowScroll(window.scrollY > 300);
     };
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
+
+    handleScroll();
+    window.addEventListener("scroll", handleScroll, { passive: true });
+    window.addEventListener("resize", handleScroll, { passive: true });
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+      window.removeEventListener("resize", handleScroll);
+    };
   }, []);
 
   const scrollToTop = () => {
@@ -25,7 +39,14 @@ export function FloatingContact() {
   };
 
   return (
-    <div className="fixed right-4 bottom-4 z-40 flex flex-col gap-3">
+    <div
+      className={cn(
+        "fixed right-4 bottom-4 z-40 flex flex-col gap-3 transition-all duration-300 ease-out",
+        isVisible
+          ? "translate-y-0 opacity-100 pointer-events-auto"
+          : "translate-y-8 opacity-0 pointer-events-none"
+      )}
+    >
       {/* Scroll to Top Button */}
       <button
         onClick={scrollToTop}

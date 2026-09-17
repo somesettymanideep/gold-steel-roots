@@ -45,9 +45,9 @@ export function LegacyVision() {
                 <div className="relative aspect-[16/10] w-full overflow-hidden">
                   <img
                     src={`${import.meta.env.BASE_URL}legacy/founders-1952.jpg`}
-                    alt="The Two Founding Brothers - Ganesh Trading & Co 1952"
+                    alt="Daya Bhai Desai and Jashu Bhai Patel - Founders of Ganesh Trading Company 1952"
                     width={1024}
-                    height={576}
+                    height={682}
                     loading="lazy"
                     className="size-full object-cover transition-transform duration-700 group-hover:scale-105"
                   />
@@ -55,10 +55,10 @@ export function LegacyVision() {
                   <div className="absolute bottom-3 left-4 right-4 flex items-end justify-between">
                     <div>
                       <p className="font-display text-base font-bold text-white sm:text-lg">
-                        The Founding Brothers
+                        Daya Bhai Desai & Jashu Bhai Patel
                       </p>
                       <p className="text-xs text-white/80">
-                        First Generation Founders • Est. 1952, Vijayawada
+                        Founders • Est. 1952, Vijayawada
                       </p>
                     </div>
                     <span className="rounded border border-gold/40 bg-ink/80 px-2.5 py-1 text-[11px] font-semibold text-gold backdrop-blur-sm">
@@ -80,16 +80,43 @@ export function LegacyVision() {
                   The Genesis in Vijayawada (1952)
                 </h3>
                 <p className="mt-3 text-sm leading-relaxed text-muted-foreground sm:text-base">
-                  In <strong>1952</strong>, two visionary brothers laid the cornerstone of{" "}
-                  <strong>Ganesh Trading & Co</strong> in the bustling commercial heart of
-                  Vijayawada. Commencing operations at a time when industrial infrastructure in
-                  Andhra Pradesh was in its infancy, they recognized the vital need for reliable
-                  tools, engineering supplies, and authentic equipment.
+                  In <strong>1952</strong>, before Andhra Pradesh's industrial base had taken shape,{" "}
+                  <strong>Daya Bhai Desai</strong> and <strong>Jashu Bhai Patel</strong> founded{" "}
+                  <strong>Ganesh Trading Company</strong> in Vijayawada. At a time when regional
+                  infrastructure was still developing, they built the business around a range of
+                  essential industrial categories:
                 </p>
-                <p className="mt-3 text-sm leading-relaxed text-muted-foreground sm:text-base">
-                  Their founding ethos was straightforward yet profound: deliver genuine products,
-                  stand uncompromisingly behind every commitment, and treat every customer as a
-                  lifelong partner. This foundation earned them decades of deep-rooted goodwill.
+                <ul className="mt-4 space-y-2 text-sm text-muted-foreground sm:text-base">
+                  <li className="flex items-start gap-2">
+                    <span className="mt-2 size-1.5 shrink-0 rounded-full bg-gold" />
+                    <span>Industrial safety and fire-suppression equipment</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="mt-2 size-1.5 shrink-0 rounded-full bg-gold" />
+                    <span>Welding machinery and consumables</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="mt-2 size-1.5 shrink-0 rounded-full bg-gold" />
+                    <span>Road safety products</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="mt-2 size-1.5 shrink-0 rounded-full bg-gold" />
+                    <span>Power tools and hand tools</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="mt-2 size-1.5 shrink-0 rounded-full bg-gold" />
+                    <span>Allied engineering solutions</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="mt-2 size-1.5 shrink-0 rounded-full bg-gold" />
+                    <span>Paints and consumables</span>
+                  </li>
+                </ul>
+                <p className="mt-4 text-sm leading-relaxed text-muted-foreground sm:text-base">
+                  Three principles guided the business from day one — product authenticity, keeping
+                  every commitment, and building relationships meant to last. That approach earned
+                  the company its standing as a trusted name across undivided Andhra Pradesh and
+                  present-day Telangana.
                 </p>
               </div>
             </div>
@@ -160,16 +187,16 @@ export function LegacyVision() {
                   Second Generation Expansion (1980)
                 </h3>
                 <p className="mt-3 text-sm leading-relaxed text-muted-foreground sm:text-base">
-                  In <strong>1980</strong>, the business transitioned to the second generation under
-                  the stewardship of brothers <strong>Dharmendra Patel</strong> and{" "}
-                  <strong>Yatin Patel</strong>. Bringing visionary acumen and modern business
-                  practices, they spearheaded a transformative period of growth and diversification.
+                  In <strong>1980</strong>, leadership passed to the second generation,{" "}
+                  <strong>Dharmendra Patel</strong> and <strong>Yatin Patel</strong>, who brought
+                  modern management practices to the business and secured authorized distribution
+                  partnerships with leading national and multinational manufacturers across these
+                  same categories.
                 </p>
                 <p className="mt-3 text-sm leading-relaxed text-muted-foreground sm:text-base">
-                  Under Dharmendra and Yatin Patel’s guidance, Ganesh Trading & Co forged authorized
-                  partnerships with premier national and international industrial brands, broadened
-                  its catalogue into specialized Safety & Fire equipment, Welding machines, and
-                  Pumps, and became an approved supplier for prestigious PSUs and government bodies.
+                  That evolution carried the company from regional distributor to an approved
+                  supplier for major Public Sector Undertakings (PSUs), government entities, and
+                  private industrial clients alike.
                 </p>
               </div>
             </div>

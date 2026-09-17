@@ -23,14 +23,69 @@ const clients: Client[] = [
     logo: "/clients/ntpc.webp",
   },
   {
-    name: "National Cadet Corps (NCC)",
-    category: "Defence & Youth Wing",
+    name: "NCC Limited",
+    category: "Infrastructure & Construction",
     logo: "/clients/ncc.png",
   },
   {
-    name: "A B Sugars Limited",
-    category: "Industrial & Manufacturing",
-    logo: "/clients/ab-sugars.png",
+    name: "MEIL",
+    category: "Infrastructure & Engineering",
+    logo: "/clients/meil.png",
+  },
+  {
+    name: "BVSR Constructions",
+    category: "Highways & Infrastructure",
+    logo: "/clients/bvsr.png",
+  },
+  {
+    name: "ATCON India",
+    category: "Civil & Rail Infrastructure",
+    logo: "/clients/atcon.png",
+  },
+  {
+    name: "Nippon Koei India",
+    category: "Engineering & Consultancy",
+    logo: "/clients/nippon-koei.png",
+  },
+  {
+    name: "Gruner Infra",
+    category: "Infrastructure & Development",
+    logo: "/clients/gruner-infra.png",
+  },
+  {
+    name: "Larsen & Toubro (L&T)",
+    category: "Engineering & Construction",
+    logo: "/clients/larsen-toubro.png",
+  },
+  {
+    name: "Sandhya Agro Exports",
+    category: "Agro Commodities & Exports",
+    logo: "/clients/sandhya-agro.png",
+  },
+  {
+    name: "Wadpack",
+    category: "Packaging Solutions",
+    logo: "/clients/wadpack.png",
+  },
+  {
+    name: "UT Lamination Welding",
+    category: "Electrical Steel & Lamination",
+    logo: "/clients/ut-lamination.png",
+  },
+  {
+    name: "Papayya India",
+    category: "Precision Engineering",
+    logo: "/clients/papayya.png",
+  },
+  {
+    name: "The Andhra Sugars Limited",
+    category: "Sugar, Chemicals & Industrial",
+    logo: "/clients/andhra-sugars.png",
+  },
+  {
+    name: "BSR Infratech",
+    category: "Infrastructure & Construction",
+    logo: "/clients/bsr-infratech.png",
   },
   {
     name: "A.P. Endowments Department",
@@ -76,8 +131,6 @@ function ClientCard({ client }: { client: Client }) {
 export function Clients() {
   // Repeating the clients to build a seamless continuous loop for the autoplay slider
   const displayClients = [
-    ...clients,
-    ...clients,
     ...clients,
     ...clients,
   ];
