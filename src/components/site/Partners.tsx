@@ -12,6 +12,7 @@ const partners = [
   { name: "Satyam Composites", logo: "/partners/satyam.png" },
   { name: "Eibenstock Positron", logo: "/partners/eibenstock.png" },
   { name: "Nilkamal", logo: "/partners/nilkamal.jpg" },
+  { name: "UT Lamination Welding", logo: "/partners/ut-lamination.png" },
 ];
 
 function LogoTile({ name, logo }: { name: string; logo?: string | undefined }) {

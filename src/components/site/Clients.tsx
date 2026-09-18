@@ -68,11 +68,6 @@ const clients: Client[] = [
     logo: "/clients/wadpack.png",
   },
   {
-    name: "UT Lamination Welding",
-    category: "Electrical Steel & Lamination",
-    logo: "/clients/ut-lamination.png",
-  },
-  {
     name: "Papayya India",
     category: "Precision Engineering",
     logo: "/clients/papayya.png",
